@@ -21,5 +21,17 @@ namespace Sysy {
 		public MainWindow() {
 			InitializeComponent();
 		}
+
+		private void minimize_button_Click(object sender, RoutedEventArgs e) {
+			SystemCommands.MinimizeWindow(this);
+		}
+
+		private void maximize_button_Click(object sender, RoutedEventArgs e) {
+			SystemCommands.MaximizeWindow(this);
+		}
+
+		private void close_button_Click(object sender, RoutedEventArgs e) {
+			SystemCommands.CloseWindow(this);
+		}
 	}
 }
